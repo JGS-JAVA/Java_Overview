@@ -31,6 +31,8 @@ public class WhileEx {
         while(input != -1){
             System.out.print("반복 시작 ");
             if(input != -1) sum += input;
+            //input = new Scanner(System.in).nextInt();
+            // 무한루프 탈출. 입력값 갱신을 위해 설정하는 input
         }
             System.out.print("합계: "+sum);
 
