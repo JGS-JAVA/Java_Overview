@@ -10,6 +10,7 @@ public class loopRun {
         String input = sc.nextLine();
         WhileEx whileEx = new WhileEx();
         int number = sc.nextInt();
+        //int sc = new Scanner(System.in).nextInt(); // 한번에 쓰기
         whileEx.method1(number);
 
     }

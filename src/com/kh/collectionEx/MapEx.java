@@ -50,29 +50,30 @@ public class MapEx {
         map.put("바나나", 2000);
         map.put("포도", 3000);
 
-        System.out.println("사과");
-        System.out.println("물가상승 사과 1500으로 변경");
+        System.out.println(map.get("사과"));
+
         map.put("사과", 1500);
 
-        System.out.println("바나나 판매? (Yes/No)");
-        String input = sc.nextLine();
-        if (input.equalsIgnoreCase("Yes")) {
-        System.out.println("바나나는 2000원입니다");
-        } else {
-        System.out.println("바나나는 판매취소");
-        return;
-        }
-        System.out.println("3000원짜리 과일 존재? (Yes/No)");
-        String input2 = sc.nextLine();
-        if (map.containsValue(3000)) {
-        System.out.println("3000원짜리 과일 존재");
-       } else {
-        System.out.println("3000원짜리 과일 없음");
-            
+        System.out.println("물가상승"+map.get("사과"));
+
+        String hasBanana = map.containsKey("바나나")? "yes" : "no";
+        System.out.println("바나나 판매?"+hasBanana);
+
+        String has3000Value = map.containsValue("3000")? "yes" : "no";
+        System.out.println("3000원짜리 과일 존재?" + has3000Value);
+
+        map.remove("바나나");
+        System.out.println("바나나 품절");
+        System.out.println("현재 과일개수"+map.size());
+        System.out.println("모든키확인"+map.keySet());
+        System.out.println("모든값확인"+map.values());
+        System.out.println("모든키값확인"+map.entrySet());
+
+
         }
 
 
 
 
     }
-}
+

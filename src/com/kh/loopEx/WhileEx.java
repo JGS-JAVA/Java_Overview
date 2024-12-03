@@ -41,8 +41,11 @@ public class WhileEx {
         while(input != -1){
             System.out.print("반복 시작 ");
             if(input != -1) sum += input;
-            //input = new Scanner(System.in).nextInt();
-            // 무한루프 탈출. 입력값 갱신을 위해 설정하는 input
+            //LoopRun 에서 Scanner 로 입력받은 값 실행하는 method1 에 들어와서
+            // input 값을 다시 새로 작성하는 코드 없어서 무한루프 발생
+            // 무한루프 탈출. 입력값 갱신을 위해 설정하는
+            // input = input.nextInt()
+            input = new Scanner(System.in).nextInt(); // Scanner 변수명 한번에 쓰기
         }
             System.out.print("합계: "+sum);
 
