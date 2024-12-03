@@ -20,6 +20,16 @@ import java.util.Scanner;
 * 조건 수행 -> false 에서 멈춤
 * }
 *
+*
+* do-while()
+* 조건식이 뒤에 작성된 와일문
+* 트루가 아니라도 최초 1회이상 반복 보장
+*
+* do{
+* 최초 1회 무조건 수행, 2회부터는 참이어야 수행
+* } while(조건);
+*
+*
 * */
 public class WhileEx {
 
