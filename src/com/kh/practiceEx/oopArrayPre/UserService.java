@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class UserService {
 
-    public static void main(String[] args) {
+    public void setSaveAllUser() {
         Scanner sc = new Scanner(System.in);
         User u = new User();
         System.out.println("사용자 등록");
@@ -50,11 +50,45 @@ public class UserService {
             System.out.println("빈칸,30자이상 불가");
             return;
         }
-        u.setPassword("123456");
+
 
         ArrayList<User> al = new ArrayList();
         al.add(u);
 
         System.out.println(al.toString());
     }
+
+    public void paramNameEmail() {
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.println("이름입력: ");
+        String inputName = sc.nextLine();
+        if (inputName != null && inputName.length() >= 2) {
+            System.out.println(inputName);
+        } else {
+            System.out.println("입력오류");
+
+        }
+
+        System.out.println("이메일 입력: ");
+        String inputEmail = sc.nextLine();
+        if (inputEmail != null && inputEmail.length() >= 2) {
+            System.out.println(inputEmail);
+        } else {
+            System.out.println("입력오류");
+
+        }
+
+            System.out.println("나이입력? (YES/NO)");
+        String input = sc.nextLine();
+        if (input.equalsIgnoreCase("yes")) {
+            setSaveAllUser();
+
+        } else {
+            return;
+        }
+
+    }
+
 }
