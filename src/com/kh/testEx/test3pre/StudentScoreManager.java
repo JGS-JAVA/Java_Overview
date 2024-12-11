@@ -1,4 +1,4 @@
-package com.kh.testEx.test3Pre;
+package com.kh.testEx.test3pre;
 
 import java.util.HashMap;
 import java.util.Map;
