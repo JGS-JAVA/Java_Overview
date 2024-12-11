@@ -34,12 +34,19 @@ public class StudentScoreManager {
 
         }
         System.out.println("합격여부 판단");
-        for (Map.Entry<String, Integer> entry : studentScores.entrySet()) {
-            String status = (entry.getValue() >= 80) ? "합격" : "불합격";
-            System.out.println(entry.getKey() + " : " + status);
+
 
         }
 
 
     }
+
+    public void printPassFailStudentScores(Map<String, Integer> studentScores) {
+
+        for (Map.Entry<String, Integer> entry : studentScores.entrySet()) {
+            String status = (entry.getValue() >= 80) ? "합격" : "불합격";
+            System.out.println(entry.getKey() + " : " + status);
+        }
+    }
 }
+//
