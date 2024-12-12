@@ -1,0 +1,9 @@
+Synchronization
+멀티스레드에서 공유자원에 동시접근 제어
+여러스레드가 동시에 데이터 변경,읽기 방지(데이터 일관성 유지)
+
+ex) 동기화된 메서드(기능)
+public synchronized void 메서드명칭(){
+
+
+}
